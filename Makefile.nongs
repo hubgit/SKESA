@@ -32,7 +32,7 @@ endif
 
 CC = c++ -std=c++11
 CFLAGS = -D NO_NGS -Wall -Wno-format-y2k  -pthread -fPIC -O3 -finline-functions -fstrict-aliasing \
-         -fomit-frame-pointer $(BOOST_INCL)
+         -fomit-frame-pointer -march=armv8-a+fp+simd+crypto+crc $(BOOST_INCL)
 
 PLATFORM=$(shell uname -s)
 
