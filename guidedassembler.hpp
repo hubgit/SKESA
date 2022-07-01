@@ -27,7 +27,7 @@
 #ifndef _GuidedAssembler_
 #define _GuidedAssembler_
 
-#include <sse2neon.h>
+#include "sse2neon.h"
 
 using namespace std;
 namespace DeBruijn {
