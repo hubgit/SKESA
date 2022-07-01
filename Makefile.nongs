@@ -32,7 +32,7 @@ endif
 
 CC = c++ -std=c++11
 CFLAGS = -D NO_NGS -Wall -Wno-format-y2k  -pthread -fPIC -O3 -finline-functions -fstrict-aliasing \
-         -fomit-frame-pointer -msse4.2 $(BOOST_INCL)
+         -fomit-frame-pointer $(BOOST_INCL)
 
 PLATFORM=$(shell uname -s)
 
